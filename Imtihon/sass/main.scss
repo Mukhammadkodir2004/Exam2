@@ -1,0 +1,40 @@
+@import './fonts';
+@import './veriables';
+@import './mixins';
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Space Mono';
+}
+
+.container {
+    max-width: 1146px;
+    padding: 0 20px;
+    margin: 0 auto
+}
+
+.btn {
+    max-width: 180px;
+    padding: 14px 39px;
+    background-color: $secondary-color;
+    color: #fff;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 25px;
+    border: none;
+    text-transform: capitalize;
+    @include for-phone {
+        padding: 10px 20px;
+    }
+}
+
+@import './all_blocks';
+
